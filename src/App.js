@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/welcome/welcome';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = ({firstname, lastname, age}) =>{
+    return (
+      <div>
+      <Welcome firstname = 'Donovan' lastname='Duperrois' age={30}/>
+      <hr />
+      <Welcome firstname = 'Della' lastname='Duck'/>
     </div>
   );
-}
+};
+
 
 export default App;
